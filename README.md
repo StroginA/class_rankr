@@ -1,5 +1,11 @@
 # class_rankr
 
+This is a fan recreation of Class_RankR, a fictional app from the web novel "Pale" by John 'Wildbow' McCrae. The project is non-commercial and all rights to it belong to J. McCrae.
+
+## Concept
+
+A social app for those who're dying to know who likes whom in their class, study group or team! Everyone can anonymously mark down their two best picks for a romantic partner, and see themselves in a final ranking according to received likes! Who knows - some of you may even find out your crushes are mutual...
+
 ## Build Setup
 
 ```bash
