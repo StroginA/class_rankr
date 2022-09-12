@@ -4,16 +4,19 @@
         Welcome to <strong>Class_RankR</strong>! You are not in any groups yet.
       </p>
       <Button @click="toggleNewGroupModal">Create new group</Button>
+      <Modal v-show="newGroupOpen"
+      v-on:close-modal="toggleNewGroupModal">Modal</Modal>
     </main>
   </template>
   
   <script lang="ts">
   import Vue from 'vue'
   import Button from '~/components/Button.vue';
+import Modal from './Modal.vue';
   
   export default Vue.extend({
       name: "HomeScreen",
-      components: { Button },
+      components: { Button, Modal },
       data() {
         return {
             newGroupOpen: false
