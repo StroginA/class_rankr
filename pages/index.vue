@@ -1,18 +1,13 @@
 <template>
-  <main class="flex flex-col p-3 items-center">
-    <p class="mb-5">
-      Welcome to <strong>Class_RankR</strong>! You are not in any groups yet.
-    </p>
-    <Button>Create new group</Button>
-  </main>
+  <HomeScreen />
 </template>
 
 <script lang="ts">
 import Vue from 'vue'
-import Button from '~/components/Button.vue';
+import HomeScreen from '../components/HomeScreen.vue';
 
 export default Vue.extend({
     name: "IndexPage",
-    components: { Button }
+    components: {HomeScreen }
 })
 </script>
