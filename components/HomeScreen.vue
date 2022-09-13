@@ -5,7 +5,9 @@
       </p>
       <Button @click="toggleNewGroupModal">Create new group</Button>
       <Modal v-show="newGroupOpen"
-      v-on:close-modal="toggleNewGroupModal">Modal</Modal>
+      v-on:close-modal="toggleNewGroupModal">
+        <p class="text-gray-800">Modal</p>
+      </Modal>
     </main>
   </template>
   

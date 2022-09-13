@@ -8,6 +8,6 @@ import HomeScreen from '../components/HomeScreen.vue';
 
 export default Vue.extend({
     name: "IndexPage",
-    components: {HomeScreen }
+    components: { HomeScreen }
 })
 </script>

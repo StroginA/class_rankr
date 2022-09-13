@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-500 h-screen">
-      <div class="md: container max-w-2xl md:mx-auto bg-gray-50 h-screen">
+      <div class="max-w-2xl md:mx-auto bg-gray-50 h-screen">
       <header>
         <Navbar />
       </header>
