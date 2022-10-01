@@ -23,11 +23,25 @@
 .app {
   background-color: $grey-1;
   height: 100vh;
+  padding: 1rem 0;
   &__container {
     background-color: $white-1;
     margin: 0 auto;
-    max-width: 42rem;
+    max-width: $tablet-min;
     height: 100%;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 0.5rem;
+    overflow: hidden;
+  }
+}
+
+@media only screen and (max-width: $tablet-min) {
+  .app {
+    padding: 0;
+    &__container {
+      margin: 0;
+      border-radius: 0;
+    }
   }
 }
 </style>
