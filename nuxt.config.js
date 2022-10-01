@@ -23,7 +23,9 @@ export default {
   css: [
     'modern-normalize',
     '@/assets/scss/main.scss',
-    '@/assets/scss/_vars.scss'
+    '@/assets/scss/_vars.scss',
+    '@/assets/fonts/russel_write_tt.css',
+    '@/assets/fonts/magic_frankie.css'
   ],
   styleResources: {
     scss: ['~/assets/scss/*.scss']  

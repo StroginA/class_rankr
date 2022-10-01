@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Russel Write TT';
+    src: local('Russel Write TT'), url('@/assets/fonts/russel_write_tt/Russel_Write_TT.eot?') format('embedded-opentype'),
+    url('@/assets/fonts/russel_write_tt/Russel_Write_TT.woff') format('woff'),
+    url('@/assets/fonts/russel_write_tt/Russel_Write_TT.ttf') format('truetype'),
+    url('@/assets/fonts/russel_write_tt/Russel_Write_TT.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

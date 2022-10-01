@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Magic Frankie';
+    src: local('Magic Frankie'),
+    url('@/assets/fonts/magic_frankie/Magic_Frankie.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
