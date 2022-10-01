@@ -1,13 +1,12 @@
 <template>
-  <div class="bg-gray-500 h-screen">
-      <div class="max-w-2xl md:mx-auto bg-gray-50 h-screen">
+  <div class="app">
+      <div class="app__container">
       <header>
         <Navbar />
       </header>
       <Nuxt />
     </div>
   </div>
-
 </template>
 
 <script lang="ts">
@@ -19,4 +18,16 @@
       components: {Navbar}
   })
 </script>
-  
+
+<style lang="scss" scoped>
+.app {
+  background-color: $grey-1;
+  height: 100vh;
+  &__container {
+    background-color: $white-1;
+    margin: 0 auto;
+    max-width: 42rem;
+    height: 100%;
+  }
+}
+</style>

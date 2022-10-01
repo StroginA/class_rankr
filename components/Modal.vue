@@ -7,7 +7,7 @@ aria-labelledby="modal-title" role="dialog" aria-modal="true"
   <div class="bg-gray-50 rounded overflow-visible relative
   p-4"
   @click.stop>
-    <button class="absolute top-0 right-0" @click="$emit('close-modal')">X</button>
+    <ButtonIcon class="absolute -top-4 -right-4" @click="$emit('close-modal')">X</ButtonIcon>
     <slot></slot>
   </div>
 </div>
@@ -15,8 +15,10 @@ aria-labelledby="modal-title" role="dialog" aria-modal="true"
 
 <script lang="ts">
     import Vue from 'vue'
+import ButtonIcon from './ButtonIcon.vue';
     
     export default Vue.extend({
-        name: "Modal",
-    })
+    name: "Modal",
+    components: { ButtonIcon }
+})
 </script>

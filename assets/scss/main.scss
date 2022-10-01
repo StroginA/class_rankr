@@ -1,0 +1,13 @@
+* {
+    color: $text-default;
+}
+
+.button {
+    background-color: $primary;
+    padding: 0.5rem;
+    line-height: 1.25;
+    border-radius: 0.25rem;
+    &:hover, &:active {
+        filter: brightness(0.9);
+    }
+}
