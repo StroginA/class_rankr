@@ -25,7 +25,8 @@ export default {
     '@/assets/scss/main.scss',
     '@/assets/scss/_vars.scss',
     '@/assets/fonts/russel_write_tt.css',
-    '@/assets/fonts/magic_frankie.css'
+    '@/assets/fonts/magic_frankie.css',
+    '@/assets/fonts/it_encore_sans.css'
   ],
   styleResources: {
     scss: ['~/assets/scss/*.scss']  

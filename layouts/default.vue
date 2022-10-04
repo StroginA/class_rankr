@@ -11,7 +11,7 @@
 
 <script lang="ts">
   import Vue from 'vue'
-  import Navbar from '~/components/Navbar.vue';
+  import Navbar from '~/components/common/Navbar.vue';
   
   export default Vue.extend({
       name: "default",
@@ -22,6 +22,7 @@
 <style lang="scss" scoped>
 .app {
   background-color: $grey-1;
+  font-family: 'IT Encore Sans';
   height: 100vh;
   padding: 1rem 0;
   &__container {

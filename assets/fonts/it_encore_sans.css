@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'IT Encore Sans';
+    src: local('IT Encore Sans'),
+    url('@/assets/fonts/it_encore_sans/IT_Encore_Sans_Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
