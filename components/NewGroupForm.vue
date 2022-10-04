@@ -11,7 +11,7 @@
             <input type="radio" id="female" value="female" />
             <label for="female">Female</label>
         </div>
-        <button class="button" type="button" name="submit">Submit and create lobby</button>
+        <Button type="button" name="submit">Submit and create lobby</Button>
     </form>
 </template>
 

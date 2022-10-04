@@ -1,6 +1,6 @@
 <template>
-  <main class="flex flex-col p-3 items-center">
-    <p class="mb-5">
+  <main class="home">
+    <p class="home__text">
       Welcome to <strong>Class_RankR</strong>! You are not in any groups yet.
     </p>
     <Button @click="toggleNewGroupModal">Create new group</Button>
@@ -31,3 +31,15 @@ export default Vue.extend({
   }
 })
 </script>
+
+<style lang="scss" scoped>
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.75rem;
+  &__text {
+    margin-bottom: 1.25rem;
+  }
+}
+</style>
