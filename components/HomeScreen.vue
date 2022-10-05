@@ -3,9 +3,9 @@
     <p class="home__text">
       Welcome to <strong>Class_RankR</strong>! You are not in any groups yet.
     </p>
-    <Button @click="toggleNewGroupModal">Create new group</Button>
-    <Modal v-show="newGroupOpen" v-on:close-modal="toggleNewGroupModal">
-      <NewGroupForm />
+    <Button @click="toggleNewSessionModal">Create new group</Button>
+    <Modal v-show="newSessionOpen" v-on:close-modal="toggleNewSessionModal">
+      <NewSessionForm />
     </Modal>
   </main>
 </template>
@@ -14,19 +14,19 @@
 import Vue from 'vue'
 import Button from '~/components/common/Button.vue';
 import Modal from '~/components/common/Modal.vue';
-import NewGroupForm from './NewGroupForm.vue';
+import NewSessionForm from './NewSessionForm.vue';
 
 export default Vue.extend({
   name: "HomeScreen",
-  components: { Button, Modal, NewGroupForm },
+  components: { Button, Modal, NewSessionForm },
   data() {
     return {
-      newGroupOpen: false
+      newSessionOpen: false
     }
   },
   methods: {
-    toggleNewGroupModal() {
-      this.newGroupOpen = !this.newGroupOpen;
+    toggleNewSessionModal() {
+      this.newSessionOpen = !this.newSessionOpen;
     }
   }
 })

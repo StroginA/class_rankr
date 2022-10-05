@@ -58,6 +58,7 @@ export default {
     dbUrl: process.env.DB_URL || 'https://db.failed',
     dbPassword: process.env.DB_PASSWORD || 'password_failed'
   },
+  serverMiddleware: ['~/server-middleware/index.ts'],
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     postcss: null

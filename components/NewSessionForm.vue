@@ -2,21 +2,24 @@
     <form class="form">
         <label class="form__label" 
         for="groupName">Enter the name for your class (or any other group you're creating this lobby for):</label>
-        <input class="form__input input" type="text" id="groupName" v-model="groupName" />
+        <input class="form__input input" type="text" id="groupName" v-model="sessionName" />
         <label class="form__label" for="creatorName">Enter your name (This is what others will see you as):</label>
         <input class="form__input input" type="text" id="creatorName" v-model="creatorName" />
         <label class="form__label" for="creatorGender">Pick your gender (This is public to other lobby members!):</label>
         <div class="form__gender-picker" id="creatorGender">
             <div class="form__gender-option">
-                <input type="radio" id="male" value="male" v-model="creatorGender" />
+                <input type="radio" id="male" value="m" v-model="creatorGender" />
                 <label class="form__label" for="male">Male</label>
             </div>
             <div class="form__gender-option">
-                <input type="radio" id="female" value="female" v-model="creatorGender" />
+                <input type="radio" id="female" value="f" v-model="creatorGender" />
                 <label class="form__label" for="female">Female</label>    
             </div>
         </div>
-        <Button :disabled="!(groupName && creatorName)" type="button" name="submit">Submit and create lobby</Button>
+        <Button 
+        :disabled="!(sessionName && creatorName)" 
+        type="button" name="submit"
+        @click="handleSubmitNewSession">Submit and create lobby</Button>
     </form>
 </template>
 
@@ -25,17 +28,24 @@ import Vue from 'vue'
 import Button from '~/components/common/Button.vue';
 
 export default Vue.extend({
-    name: "NewGroupForm",
+    name: "NewSessionForm",
     components: { Button },
     data() {
         return {
-            groupName: "",
+            sessionName: "",
             creatorName: "",
-            creatorGender: "male",
+            creatorGender: "m",
         }
     },
     methods: {
-
+        async handleSubmitNewSession() {
+            await this.$axios.$post('/api/sessions/create', {
+                sessionName: this.sessionName,
+                creatorName: this.creatorName,
+                creatorGender: this.creatorGender
+            });
+            this.$emit('close-modal');
+        }
     }
 })
 </script>
