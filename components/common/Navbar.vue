@@ -27,14 +27,14 @@ export default Vue.extend({
     &__upper {
         background-color: #1a1a1a;
         height: 2.5rem;
-        padding-left: 1rem;
+        padding-left: 0.5rem;
+        display: flex;
+        align-items: center;
     }
     &__brand {
         display: block;
-        margin: auto 0;
-        &>* {
-            font-size: 2rem;
-        }
+        font-size: 2rem;
+
     }
     &__lower {
         background-color: #4d4d4d;
