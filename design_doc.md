@@ -128,4 +128,4 @@
 - Main: IT Encore Sans / Black crow / Futura P
 - Logo: Russell Write TT
 - Logo R: Magic Frankie / Buchery / Glarious-Script / Caramel
-- Favicon: 
+- Favicon: Magic Frankie

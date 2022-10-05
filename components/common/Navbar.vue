@@ -5,7 +5,7 @@
         </div>
         <div class="navbar__lower">
             <div class="navbar__menu">
-                <NuxtLink class="navbar__link" to="/about">About</NuxtLink>
+                <NuxtLink class="navbar__item" to="/about">About</NuxtLink>
             </div>
         </div>
     </nav>
@@ -39,8 +39,11 @@ export default Vue.extend({
     &__lower {
         background-color: #4d4d4d;
         height: 2.5rem;
+        padding-left: 0.5rem;
+        display: flex;
+        align-items: center;
     }
-    &__link {
+    &__item {
         color: $white-1;
     }
 }
