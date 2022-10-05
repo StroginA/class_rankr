@@ -21,8 +21,9 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .modal {
-  position: relative;
-  margin: auto;
+  position: fixed;
+  top: 0;
+  margin: 5rem auto auto auto;
   &__backdrop {
     overflow: auto;
     position: fixed;

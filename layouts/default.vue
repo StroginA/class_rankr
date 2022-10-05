@@ -1,10 +1,11 @@
 <template>
   <div class="app">
-      <div class="app__container">
-      <header>
+    <div class="app__container">
+      <header class="app__header">
         <Navbar />
       </header>
-      <Nuxt />
+      <Nuxt class="app__body" />
+      <AppFooter class="app__footer" />
     </div>
   </div>
 </template>
@@ -12,10 +13,11 @@
 <script lang="ts">
   import Vue from 'vue'
   import Navbar from '~/components/common/Navbar.vue';
+  import AppFooter from '~/components/common/AppFooter.vue';
   
   export default Vue.extend({
       name: "default",
-      components: {Navbar}
+      components: {Navbar, AppFooter}
   })
 </script>
 
@@ -33,6 +35,12 @@
     border-radius: 1rem;
     box-shadow: 1rem 1rem 0.5rem;
     overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+  }
+  &__footer {
+    margin-top: auto;
   }
 }
 

@@ -47,9 +47,17 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    '@nuxtjs/axios'
   ],
 
+  publicRuntimeConfig: {
+    baseURL: process.env.BASE_URL || 'https://nuxtjs.org'
+  },
+  privateRuntimeConfig: {
+    dbUrl: process.env.DB_URL || 'https://db.failed',
+    dbPassword: process.env.DB_PASSWORD || 'password_failed'
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     postcss: null

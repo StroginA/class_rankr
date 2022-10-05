@@ -27,6 +27,10 @@ export default Vue.extend({
     &:hover, &:active {
         filter: brightness(0.9);
     }
+    &:disabled {
+        filter: opacity(0.7);
+        cursor: not-allowed;
+    }
     &_small-icon {
         background-color: inherit;
         filter: brightness(0.9);

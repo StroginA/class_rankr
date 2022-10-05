@@ -2,13 +2,16 @@
     <main class="about">
         <p class="about__text">
             The concept and design of <strong>Class_RankR</strong>
-            are taken from <em>Pale</em> by John 'Wildbow' McCrae.
+            are borrowed from <em>Pale</em> by John 'Wildbow' McCrae.
             All rights belong to John 'Wildbow' McCrae. This is a fan implementation of the app.
         </p>
 
         <a class="about__link link" href="https://www.patreon.com/Wildbow">Support Wildbow</a>
 
         <a class="about__link link" href="https://palewebserial.wordpress.com/about/">Read Pale</a>
+
+        <a class="about__link link"
+        href="https://www.flaticon.com/free-icons/heart" title="heart icons">Heart icons created by Freepik - Flaticon</a>
     </main>
 </template>
 
