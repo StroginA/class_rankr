@@ -4,8 +4,8 @@
       Welcome to <strong>Class_RankR</strong>! You are not in any groups yet.
     </p>
     <Button @click="toggleNewSessionModal">Create new group</Button>
-    <Modal v-show="newSessionOpen" v-on:close-modal="toggleNewSessionModal">
-      <NewSessionForm />
+    <Modal v-show="newSessionOpen" @close-modal="toggleNewSessionModal">
+      <NewSessionForm @close-modal="toggleNewSessionModal" />
     </Modal>
   </main>
 </template>

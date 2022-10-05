@@ -19,7 +19,7 @@
         <Button 
         :disabled="!(sessionName && creatorName)" 
         type="button" name="submit"
-        @click="handleSubmitNewSession">Submit and create lobby</Button>
+        @click="handleSubmitNewSession">{{submitButtonText}}</Button>
     </form>
 </template>
 
@@ -35,15 +35,21 @@ export default Vue.extend({
             sessionName: "",
             creatorName: "",
             creatorGender: "m",
+            submitButtonText: "Create new lobby"
         }
     },
     methods: {
         async handleSubmitNewSession() {
+            this.submitButtonText = "Submitting..."
             await this.$axios.$post('/api/sessions/create', {
                 sessionName: this.sessionName,
                 creatorName: this.creatorName,
                 creatorGender: this.creatorGender
             });
+            this.sessionName = "";
+            this.creatorName = "";
+            this.creatorGender = "m";
+            this.submitButtonText = "Create new lobby";
             this.$emit('close-modal');
         }
     }
