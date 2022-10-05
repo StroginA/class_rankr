@@ -23,7 +23,7 @@
 
 <style lang="scss" scoped>
 .app {
-  background-color: $grey-1;
+  background-color: $primary-soft;
   font-family: 'IT Encore Sans';
   height: 100vh;
   padding: 1rem 0;
