@@ -1,11 +1,22 @@
 <template>
     <form class="form">
         <label class="form__label" 
-        for="groupName">Enter the name for your class (or any other group you're creating this lobby for):</label>
+        for="groupName">
+            Enter the name for your class
+            <br>
+            (or any other group you're creating this lobby for):</label>
         <input class="form__input input" type="text" id="groupName" v-model="sessionName" />
-        <label class="form__label" for="creatorName">Enter your name (This is what others will see you as):</label>
+        <label class="form__label" for="creatorName">
+            Enter your name
+            <br>
+            (This is what others will see you as):
+        </label>
         <input class="form__input input" type="text" id="creatorName" v-model="creatorName" />
-        <label class="form__label" for="creatorGender">Pick your gender (This is public to other lobby members!):</label>
+        <label class="form__label" for="creatorGender">
+            Pick your gender
+            <br>
+            (This is public to other lobby members!):
+        </label>
         <div class="form__gender-picker" id="creatorGender">
             <div class="form__gender-option">
                 <input type="radio" id="male" value="m" v-model="creatorGender" />
@@ -60,8 +71,11 @@ export default Vue.extend({
 .form {
     display: flex;
     flex-direction: column;
-    &__input {
+    &__label {
         margin-bottom: 0.5rem;
+    }
+    &__input {
+        margin-bottom: 1rem;
     }
     &__gender-picker {
         padding: 1rem;
