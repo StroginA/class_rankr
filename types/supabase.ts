@@ -327,7 +327,7 @@ export interface definitions {
      * Format: timestamp with time zone
      * @default now()
      */
-    created_at?: string;
+    created_at: string;
     /** Format: timestamp with time zone */
     tallied_at?: string;
     /** Format: character varying */
@@ -352,7 +352,7 @@ export interface definitions {
     name: string;
     /**
      * Format: character varying
-     * @default M
+     * @default m''::character varying
      */
     gender: string;
     /**
@@ -364,12 +364,12 @@ export interface definitions {
      * Format: boolean
      * @default false
      */
-    invite_used?: boolean;
+    invite_used: boolean;
     /**
      * Format: boolean
      * @default false
      */
-    is_admin?: boolean;
+    is_admin: boolean;
     /** Format: text */
     avatar?: string;
   };

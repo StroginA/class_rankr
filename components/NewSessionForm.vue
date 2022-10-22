@@ -52,11 +52,12 @@ export default Vue.extend({
     methods: {
         async handleSubmitNewSession() {
             this.submitButtonText = "Submitting..."
-            await this.$axios.$post('/api/sessions/create', {
+            const res = await this.$axios.$post('/api/sessions/create', {
                 sessionName: this.sessionName,
                 creatorName: this.creatorName,
                 creatorGender: this.creatorGender
-            });
+            }) as {inviteCode: string};
+            this.$router.push({path: `/invite/${res.inviteCode}`});
             this.sessionName = "";
             this.creatorName = "";
             this.creatorGender = "m";
